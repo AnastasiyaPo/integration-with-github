@@ -1,7 +1,9 @@
-export default function GithubCard() {
+import {Repository} from "../../../types/repository";
+
+export default function GithubCard(props: Repository.ItemModel_DTO) {
   return (
-    <div className="Github-card">
-      GithubCard
-    </div>
+    <article className="Github-card">
+      {props.name}
+    </article>
   );
 }
