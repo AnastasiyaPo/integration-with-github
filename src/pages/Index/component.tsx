@@ -1,3 +1,5 @@
+import "./styles.scss"
+
 import List from "./components/List";
 import {useEffect} from "react";
 import {useRequest} from "../../hooks/useRequest.hooks";
@@ -17,7 +19,7 @@ export default function IndexPage() {
   }, [fetch])
 
   return (
-    <div className="Index-page">
+    <div className="p-Index">
       <List list={state.data.items} />
       {state.isFetching && (
         <Loader />
