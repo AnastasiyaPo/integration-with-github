@@ -3,7 +3,7 @@ export declare namespace Repository {
     id: string | number
     name: string
     watchers_count: number
-    url: string
+    html_url: string
     description?: string
     topics?: string[]
     language?: string

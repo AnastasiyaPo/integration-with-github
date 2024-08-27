@@ -8,7 +8,7 @@ export default function GithubCard(props: Repository.ItemModel_DTO) {
     <article className="Github-card">
       <header>
         <h3 className="Github-card__title">
-          <a href={props.url} target="_blank" rel="noreferrer">
+          <a href={props.html_url} target="_blank" rel="noreferrer">
             {props.name}
           </a>
         </h3>
